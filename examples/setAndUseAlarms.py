@@ -8,7 +8,7 @@
 #
 # example on how to set and use the alarm on the DS3231
 
-import microDS3231
+import DS3231micro
 import machine
 import time
 
