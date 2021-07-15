@@ -23,7 +23,7 @@ class DS3231:
         self.sclPin = machine.Pin(i2cClockPin, pull = machine.Pin.PULL_UP, mode=machine.Pin.OPEN_DRAIN)
         self.sdaPin = machine.Pin(i2cDataPin, pull = machine.Pin.PULL_UP, mode=machine.Pin.OPEN_DRAIN)
         
-        self.i2cVar = machine.I2C(-1, scl=self.sclPin, sda=self.sdaPin)
+        self.i2cVar = machine.I2C(1, scl=self.sclPin, sda=self.sdaPin)
         self.i2cAddr = i2cAddr
         
     # get times functions -------------------------------------------------------------------------------------------------------
