@@ -13,7 +13,7 @@ import machine
 import time
 
 # initialize DS3231
-rtc = DS3231micro.DS3231(5, 4)
+rtc = DS3231micro.DS3231(i2cClockPin=5, i2cDataPin=4)
 
 # set time to 2019, November, 23, Monday, 19 h, 50 min, 0 sec
 rtc.setDateTime(19, 11, 23, 1, 19, 50, 0)
